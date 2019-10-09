@@ -1,6 +1,6 @@
 package Main
 
-import Figure.{Circle, Square, Triangle}
+import Figure.{Circle, Cube, Square, Triangle}
 
 object Main extends App {
 
@@ -10,12 +10,14 @@ object Main extends App {
 
   val radius = Utils.radius()
 
-  val Circle = new Circle(radius, name)
-  val Triangle = new Triangle(10, 2, name)
-  val Square = new Square(35, 16, name)
+  val circle = new Circle(radius, name)
+  val triangle = new Triangle(10, 2, name)
+  val square = new Square(35, 16, name)
+  val cube = new Cube(23,4,18, name)
 
-  println(Circle.area())
-  println(Triangle.area())
-  println(Square.name() + "'s area is = " + Square.area())
-  Square.show()
+  println(circle.area())
+  println(triangle.area())
+  println(square.name() + "'s area is = " + square.area())
+  square.show()
+  println(cube.area())
 }
