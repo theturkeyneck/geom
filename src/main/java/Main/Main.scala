@@ -20,4 +20,5 @@ object Main extends App {
   println(square.name() + "'s area is = " + square.area())
   square.show()
   println(cube.area())
+  println(cube.dimensions())
 }
